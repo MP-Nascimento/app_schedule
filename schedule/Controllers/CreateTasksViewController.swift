@@ -32,12 +32,12 @@ class CreateTasksViewController: UITableViewController, UITextFieldDelegate  {
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
-            return "Task Name"
+            return "Descricao da tarefa"
             
         }else  if    section == 1 {
-            return "Category"
+            return "Categorias"
         }else {
-            return "Date and Time"
+            return "Data e hora"
         }
     }
     
@@ -96,7 +96,7 @@ class CreateTasksViewController: UITableViewController, UITextFieldDelegate  {
         toolBar.barStyle = .default
         toolBar.isTranslucent = true
         let barItemSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let doneButton = UIBarButtonItem(title: "Done", style:.done,target:self,action:#selector(selectDate))
+        let doneButton = UIBarButtonItem(title: "Feito", style:.done,target:self,action:#selector(selectDate))
         toolBar.setItems([barItemSpace,doneButton], animated: true)
         toolBar.isUserInteractionEnabled =  true
         toolBar.sizeToFit()

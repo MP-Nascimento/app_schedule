@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My Tasks-->
+        <!--Tarefas-->
         <scene sceneID="VxX-ch-oZS">
             <objects>
                 <tableViewController storyboardIdentifier="TasksTableViewController" id="Y8h-Uq-JBd" customClass="TasksTableViewController" customModule="schedule" customModuleProvider="target" sceneMemberID="viewController">
@@ -95,7 +95,7 @@
                             <outlet property="delegate" destination="Y8h-Uq-JBd" id="BIa-7r-gcI"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Tasks" id="qtF-4O-NLA">
+                    <navigationItem key="navigationItem" title="Tarefas" id="qtF-4O-NLA">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="oaK-i9-ylZ">
                             <connections>
                                 <segue destination="Jjk-2S-taB" kind="show" id="cEf-MX-NsL"/>
@@ -107,7 +107,7 @@
             </objects>
             <point key="canvasLocation" x="95.652173913043484" y="117.85714285714285"/>
         </scene>
-        <!--Create Task-->
+        <!--Criar tarefas-->
         <scene sceneID="8Fw-nX-Qrh">
             <objects>
                 <tableViewController id="Jjk-2S-taB" customClass="CreateTasksViewController" customModule="schedule" customModuleProvider="target" sceneMemberID="viewController">
@@ -122,7 +122,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add Your task Description" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ip-YE-bC0">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Descrição da tarefa" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ip-YE-bC0">
                                             <rect key="frame" x="20" y="8" width="334" height="34"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="34" id="eix-eu-24S"/>
@@ -149,7 +149,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="344.5" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Marketing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9SM-ry-Wxc">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Para Fazer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9SM-ry-Wxc">
                                             <rect key="frame" x="20" y="0.0" width="316.5" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
@@ -197,8 +197,8 @@
                             <outlet property="delegate" destination="Jjk-2S-taB" id="TOH-2f-XAt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Create Task" id="kii-O1-QxR">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="HcO-Z1-2Z1">
+                    <navigationItem key="navigationItem" title="Criar tarefas" id="kii-O1-QxR">
+                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="HcO-Z1-2Z1">
                             <connections>
                                 <action selector="tapSaveButton:" destination="Jjk-2S-taB" id="Bd1-EY-Wej"/>
                             </connections>

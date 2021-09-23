@@ -12,10 +12,10 @@ class CategoryRepostory{
     static func getCategories() -> [Category] {
         
         let categorys = [
-            Category(name: "Work", color: UIColor.green),
-            Category(name: "Study", color: UIColor.blue),
-            Category(name: "To Dos", color: UIColor.yellow),
-            Category(name: "Reminders", color: UIColor.red)
+            Category(name: "Trabalho", color: UIColor.green),
+            Category(name: "Estudo", color: UIColor.blue),
+            Category(name: "Para Fazer", color: UIColor.yellow),
+            Category(name: "Lembrete", color: UIColor.red)
         ]
         return categorys;
     }
